@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	mm := cli.InitMenu()
+	mm := cli.InitCliTool()
 	p := tea.NewProgram(mm, tea.WithAltScreen())
 	if _, err := p.Run(); err != nil {
 		log.Fatalln(err)

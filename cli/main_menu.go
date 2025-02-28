@@ -19,14 +19,6 @@ type MainMenu struct {
 	status   *StatusBar
 }
 
-type StatusBar struct {
-	mode        string
-	encoding    string
-	comment     string
-	message     string
-	coordinates string
-}
-
 func (m *MainMenu) Init() tea.Cmd {
 	return nil
 }
@@ -59,9 +51,9 @@ func (m *MainMenu) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 
 		case "s": // Smart sync
-		// TODO
+			// TODO
 		case "c": // Configure settings
-		// TODO
+			// TODO
 		case "h": // Sync history
 			// TODO
 		case "q":
